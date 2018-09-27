@@ -40,7 +40,6 @@ a:visited {
   height: auto;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
-
 }
 
 .container,.container2{
@@ -130,9 +129,9 @@ a:visited {
 }
 @-webkit-keyframes Neon{
   from {
-    text-shadow: 0 0 120px #ff1a1a,0 0 75px #ff1a1a, 0 0 50px #ff1a1a, 0 0 40px #ff1a1a, 0 0 35px #ff1a1a, 0 0 15px #fff, 0 0 20px #ff1a1a, 0 0 10px #fff, 0 0 5px #fff
+    text-shadow: 0 0 120px #ff1a1a,0 0 75px #ff1a1a, 0 0 50px #ff1a1a, 0 0 40px #ff1a1a, 0 0 35px #ff1a1a, 0 0 15px #fff, 0 0 20px #ff1a1a, 0 0 10px #fff, 0 0 5px #fff;
   }
   to {
-    text-shadow: 0 0 250px #ff1a1a,0 0 150px #ff1a1a, 0 0 100px #ff1a1a, 0 0 80px #ff1a1a, 0 0 70px #ff1a1a, 0 0 40px #ff1a1a, 0 0 30px #fff, 0 0 20px #fff, 0 0 10px #fff
+    text-shadow: 0 0 250px #ff1a1a,0 0 150px #ff1a1a, 0 0 100px #ff1a1a, 0 0 80px #ff1a1a, 0 0 70px #ff1a1a, 0 0 40px #ff1a1a, 0 0 30px #fff, 0 0 20px #fff, 0 0 10px #fff;
   }
 }
