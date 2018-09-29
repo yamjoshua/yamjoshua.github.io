@@ -1,5 +1,5 @@
-@import url('//fonts.googleapis.com/css?family=Poiret+One');
-@import url('//fonts.googleapis.com/css?family=Aladin');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Aladin');
 body, html{
   height:100%;
   margin:0;
@@ -8,8 +8,9 @@ body, html{
   color: #666 ;
 }
 #Name:hover {
-  -webkit-animation: Neon 10.5s;
+  -webkit-animation: Neon 4.5s infinite;
 }
+
 nav {
   display: flex;
   font-size: 3vw;
@@ -29,6 +30,10 @@ a:link{
 a:visited {
     color: black;
 }
+#body{
+  font-size: 10vw;
+  font-color: black;
+}
 #head{
   background-color: #fff;
   padding: 1px;
@@ -42,7 +47,7 @@ a:visited {
   filter: drop-shadow(5px 5px 5px #222);
 }
 
-.container,.container2{
+.container,.container2,.container3{
   min-height:100%;
   position:relative;
   background-position: center;
@@ -84,10 +89,12 @@ a:visited {
 .container2:before{
     content: '';
     position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
+}
+.container3{
+  background-image:url('../img/hongkong1.jpg');
+  overflow:hidden;
+  background-attachment: fixed;
+  text-align: center;
 }
 .ptext1,.ptext2{
   font-family: "Poiret One";
@@ -121,18 +128,23 @@ a:visited {
 
 
 @-webkit-keyframes opacity {
-  0% {
+  0%,100%{
     opacity: 0;
   }
-  100% {
+  50% {
     opacity: 1;
   }
 }
 @-webkit-keyframes Neon{
-  from {
-    text-shadow: 0 0 120px #ff1a1a,0 0 75px #ff1a1a, 0 0 50px #ff1a1a, 0 0 40px #ff1a1a, 0 0 35px #ff1a1a, 0 0 15px #fff, 0 0 20px #ff1a1a, 0 0 10px #fff, 0 0 5px #fff;
+  0% {
+    text-shadow: 0 0 100px #ff1a3a, 0 0 80px #ff1a2a, 0 0 50px #ff1a1a, 0 0 30px #ff1a1a, 0 0 10px #ff1a1a;
   }
-  to {
-    text-shadow: 0 0 250px #ff1a1a,0 0 150px #ff1a1a, 0 0 100px #ff1a1a, 0 0 80px #ff1a1a, 0 0 70px #ff1a1a, 0 0 40px #ff1a1a, 0 0 30px #fff, 0 0 20px #fff, 0 0 10px #fff;
+  50% {
+    text-shadow: 0 0 120px #F56060, 0 0 100px #F56060, 0 0 80px #F56060, 0 0 60px #F56060, 0 0 50px #F56060;
+  }
+
+  100% {
+    text-shadow: 0 0 100px #ff1a3a, 0 0 80px #ff1a2a, 0 0 50px #ff1a1a, 0 0 30px #ff1a1a, 0 0 10px #ff1a1a;
   }
 }
+
