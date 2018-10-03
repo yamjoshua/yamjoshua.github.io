@@ -10,6 +10,11 @@ body, html{
 #Name:hover {
   -webkit-animation: Neon 3.5s infinite;
 }
+.text{
+  color:white;
+  text-align: center;
+  font-weight: 900;
+}
 
 nav {
   display: flex;
@@ -35,13 +40,12 @@ a:visited {
   background-color: #fff;
   padding: 1px;
   display: block;
-  margin-left: 42vw;
+  margin-left: 39.5vw;
   margin-top: 13vw;
   border-radius: 50%;
   width:20vw;
   height: auto;
-  -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(5px 5px 5px #222);
+  
 }
 
 .container,.container2,.container3{
@@ -78,15 +82,7 @@ a:visited {
   -webkit-animation-duration: 15s;
   -webkit-animation-iteration-count: 0.5;
 }
-.container2{
-  background-image:url('../img/hongkong.jpg');
-  overflow:hidden;
-  text-align:-webkit-center;
-}
-.container2:before{
-    content: '';
-    position: absolute;
-}
+
 .container3{
   background-image:url('../img/hongkong1.jpg');
   overflow:hidden;
@@ -118,6 +114,18 @@ a:visited {
   font-size: 10vw;
   color: white;
 }
+.img-src {
+    position: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.blur { opacity: 0; }
 #demo{
   font-size:10vw;
 }
@@ -138,14 +146,16 @@ a:visited {
 }
 @-webkit-keyframes Neon{
   0% {
-    text-shadow: 0 0 10px #FF1a1a, 0 0 10px #FF1a1a, 0 0 10px #FF1a1a, 0 0 15px #FF1a1a, 0 0 15px #FF1a1a,0 0 15px #FF1a1a, 0 0 5px #FF1a1a, 0 0 5px #FF1a1a, 0 0 5px #FF1a1a, 0 0 5px #FF1a1a;
+    text-shadow: 0 0 20px #FF1a1a, 0 0 20px #FF1a1a,0 0 20px #FF1a1a, 0 0 20px #FF1a1a,0 0 20px #FF1a1a, 0 0 20px #FF1a1a,0 0 10px #FF1a1a, 0 0 10px #FF1a1a, 0 0 10px #FF1a1a, 0 0 15px #FF1a1a, 0 0 15px #FF1a1a,0 0 15px #FF1a1a, 0 0 5px #FF1a1a,
+                 0 0 5px #FF1a1a, 0 0 5px #FF1a1a, 0 0 5px #FF1a1a;
   }
   50% {
-    text-shadow: 0 0 10px #ffffff , 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff , 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff;
+    text-shadow: 0 0 15px #ffffff, 0 0 10px #ffffff , 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff , 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff;
   }
 
   100% {
-    text-shadow: 0 0 10px #FF1a1a, 0 0 10px #FF1a1a, 0 0 10px #FF1a1a, 0 0 5px #FF1a1a, 0 0 5px #FF1a1a,0 0 5px #FF1a1a, 0 0 5px #FF1a1a, 0 0 5px #FF1a1a, 0 0 5px #FF1a1a, 0 0 5px #FF1a1a;
+    text-shadow: 0 0 20px #FF1a1a, 0 0 20px #FF1a1a,0 0 20px #FF1a1a, 0 0 20px #FF1a1a,0 0 20px #FF1a1a,0 0 20px #FF1a1a,0 0 10px #FF1a1a, 0 0 10px #FF1a1a, 0 0 10px #FF1a1a, 0 0 5px #FF1a1a, 0 0 5px #FF1a1a,0 0 5px #FF1a1a, 0 0 5px #FF1a1a, 
+                 0 0 5px #FF1a1a, 0 0 5px #FF1a1a, 0 0 5px #FF1a1a;
   }
 }
 
