@@ -9,8 +9,6 @@ body, html{
 }
 #Name:hover {
   -webkit-animation: Neon 3.5s infinite;
-  animation: Neon 3.5s infinite;
-  text-decoration: none;
 }
 h1,h3,h4{
   margin:5px;
@@ -52,17 +50,17 @@ nav {
   background-color: rgba(0,0,0,0.5);
 
 }
-nav a {
+nav a.navbar {
   text-decoration: none;
   flex-grow: 1;
   margin: 1vw;
   color: white;
 
 }
-a:link{
+a.navbar:link{
   color:white;
 }
-a:hover{
+a.navbar:hover{
   text-decoration: underline;
 }
 #pagenameeP{
@@ -164,6 +162,7 @@ font-size: 3vw;
 .blur {
  opacity: 0; 
  min-height: 100%;
+}
 #demo{
   font-size:10vw;
 }
