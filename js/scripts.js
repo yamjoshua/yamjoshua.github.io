@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 	$(window).scroll(function() {
     var s = 2.0*($(window).scrollTop())-400,
-    opacityVal = (s / 1000.0);
+    opacityVal = (s / 500.0);
     $('.blur').css('opacity', opacityVal);
 	});
 
