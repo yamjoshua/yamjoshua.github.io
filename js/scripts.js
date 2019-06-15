@@ -9,6 +9,6 @@ $(document).ready(function() {
     $('.blur').css('opacity', opacityVal);
 	});
 
-   	$('html, body').delay(7000).animate({scrollTop:$(window).height()}, 1000);
+   	$('html, body').delay(2000).animate({scrollTop:$(window).height()}, 1000);
 
 });
